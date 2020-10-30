@@ -30,5 +30,5 @@ variable "keys" {
     }))
   }))
   default     = []
-  description = ""
+  description = "Google KMS Keys to create and configure permissions for."
 }
