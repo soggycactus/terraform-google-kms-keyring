@@ -39,7 +39,7 @@ module "keyring_example" {
   ]
 
   providers = {
-    google = google-beta.<PROVIDER ALIAS>
+    google = google.<PROVIDER ALIAS>
   }
 }
 ```
