@@ -53,16 +53,3 @@ If you want to create a key with permissions that don't have any conditions, sim
       description = "",
       expression  = ""
     }
-
-## Google Beta Provider
-
-**YOU MUST USE** the `google-beta` provider with `version = "~> 3.10.0"` with this module. Without this provider, it is impossible to specify conditions with the IAM policies used to govern the keys on the keyring. 
-
-```hcl
-provider "google-beta" {
-  alias   = <ALIAS>
-  project = <PROJECT ID>
-  region  = <REGION>
-  version = "~> 3.10.0"
-}
-```
